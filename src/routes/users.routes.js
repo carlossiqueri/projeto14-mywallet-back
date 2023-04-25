@@ -5,7 +5,6 @@ import { userAuth } from "../controllers/users.controller.js";
 import { validateSchema } from "../middlewares/validate.middleware.js";
 import { usersSchema } from "../schemas/usersSchema.schema.js";
 
-
 const usersRouter = Router();
 
 usersRouter.post("/cadastro", validateSchema(usersSchema), singup);
